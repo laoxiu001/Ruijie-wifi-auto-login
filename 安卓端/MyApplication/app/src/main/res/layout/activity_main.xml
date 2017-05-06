@@ -1,0 +1,89 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:stretchColumns="0,3">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView />
+
+        <TextView />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="10pt" />
+
+        <TextView />
+    </TableRow>
+
+    <TableRow>
+        <TextView />
+        <TextView
+            android:text="用   户："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100pt"
+            android:textSize="12pt" />
+        <TextView />
+    </TableRow>
+    <TableRow android:layout_marginTop="15pt">
+        <TextView />
+        <TextView
+            android:text="密  码："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            />
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12pt"
+            android:inputType="textPassword"/>
+        <TextView />
+    </TableRow>
+    <CheckBox
+        android:layout_marginTop="10pt"
+        android:layout_marginLeft="80pt"
+        android:id="@+id/auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="auto"
+        android:text="自动登录"
+        android:checked="false"/>
+
+    <LinearLayout android:layout_marginTop="15pt">
+        <Button
+            android:layout_marginLeft="15pt"
+            android:layout_weight="1"
+            android:id="@+id/login"
+            android:text="登录"
+            android:onClick="login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginRight="15pt"
+            android:layout_weight="1"
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="logout"
+            android:text="注销" />
+    </LinearLayout>
+
+</TableLayout>
